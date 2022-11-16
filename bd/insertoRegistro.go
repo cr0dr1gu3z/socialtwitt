@@ -13,7 +13,7 @@ func InsertoRegistro(u models.Usuario) (string, bool, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 	//defer se ejecuta al final
 	defer cancel()
-
+	
 	db := MongoCN.Database("socialtwitt")
 	col := db.Collection("usuarios")
 
