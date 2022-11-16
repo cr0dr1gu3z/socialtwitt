@@ -14,7 +14,7 @@ var Email string
 var IDUsuario string
 
 func ProcesoToken(tk string) (*models.Claim, bool, string, error) {
-	miClave := []bytes("MasterdelDesarrollo_grupodeFacebook")
+	miClave := []byte("MasterdelDesarrollo_grupodeFacebook")
 	claims := &models.Claim{}
 
 	splitToken := strings.Split(tk, "Bearer")
